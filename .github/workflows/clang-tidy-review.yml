@@ -16,9 +16,11 @@ jobs:
   review:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
-          submodules: true
+          submodules:  'true'
+          fetch-depth: 0
 
       - name: Run clang-tidy
         uses: ZedThree/clang-tidy-review@v0.8.3
