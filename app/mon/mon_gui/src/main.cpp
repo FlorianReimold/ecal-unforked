@@ -27,10 +27,10 @@ int main(int argc, char *argv[])
 
   qRegisterMetaType<QVector<int>>("QVector<int>");
 
-  a.setOrganizationName      ("Continental");
-  a.setOrganizationDomain    ("continental-corporation.com");
-  a.setApplicationName       ("ecalmongui");
-  a.setApplicationDisplayName("eCAL Monitor");
+   a.setOrganizationName      ("Continental");
+   a.setOrganizationDomain    ("continental-corporation.com");
+   a.setApplicationName       ("ecalmongui");
+   a.setApplicationDisplayName("eCAL Monitor");
 
   Ecalmon* w = new Ecalmon();
   w->setAttribute(Qt::WidgetAttribute::WA_DeleteOnClose);
