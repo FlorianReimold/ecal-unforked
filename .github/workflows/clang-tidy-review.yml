@@ -22,6 +22,12 @@ jobs:
           submodules:  'true'
           fetch-depth: 0
           
+      - name: Install Dependencies
+        run: |
+          sudo apt-get -y update
+          sudo apt-get -y install ninja-build libcurl4-openssl-dev libprotobuf-dev libprotoc-dev protobuf-compiler libhdf5-dev qtbase5-dev libqwt-qt5-dev
+
+          
       - name: CMake
         shell: bash
         working-directory: ${{ runner.workspace }}
