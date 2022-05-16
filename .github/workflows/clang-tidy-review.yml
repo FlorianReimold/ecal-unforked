@@ -82,7 +82,7 @@ jobs:
         with:
           build_dir: _build
           apt_packages: "cmake,ninja-build,build-essential,zlib1g-dev,qtbase5-dev,libhdf5-dev,libprotobuf-dev,libprotoc-dev,protobuf-compiler,libcurl4-openssl-dev,libqwt-qt5-dev"
-          config_file: ".clang-tidy"
+          #config_file: ".clang-tidy"
           # Googletest triggers a _lot_ of clang-tidy warnings, so ignore all
           # the unit tests until they're fixed or ignored upstream
           exclude: "/testing/*,/thirdparty/*,/_build/*,convert_utf.cpp,convert_utf.h"
